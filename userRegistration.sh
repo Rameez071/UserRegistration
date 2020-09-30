@@ -4,8 +4,8 @@
 VALIDNAMEPATTERN="^[A-Z]{1}[a-z]{2,}$"
 EMAILPATTERN="^[[:alnum:]]+(([._+-]*)[[:alnum:]]+)*@[[:alnum:]]+.[[:alpha:]]{2,4}([.][[:alpha:]]{2,3})*$"
 MOBILEPATTERN="^[+][0-9]{2}[ ][0-9]{10}$"
-#pattern for password with atleast 1 uppercase 
-PASSWORDPATTERN="(?=[^A-Z]*[A-Z])[[:alnum:]]{8,}$"
+#pattern for password with atleast 1 numeric number
+PASSWORDPATTERN="^((?=.*([0-9])(?=.*[A-Z])[[:alnum:]]{8,}$"
 
 #function for pattern check
 function patternCheck()
